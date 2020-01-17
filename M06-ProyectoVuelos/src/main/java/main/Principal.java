@@ -1,35 +1,22 @@
 package main;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
-import java.util.concurrent.Callable;
 
 import javax.persistence.ParameterMode;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.procedure.ProcedureCall;
-import org.hibernate.query.Query;
-
-import com.mysql.cj.jdbc.CallableStatement;
 
 import model.Personal;
 import model.Vuelo;
 
 public class Principal {
-
-	static String usuarif = "root";
-	static String contrf = "";
-	static String urlf = "jdbc:mysql://localhost:3306/vuelos?useSSL=false&amp;serverTimezone=UTC";
 
 	public static void main(String[] args) {
 		Scanner lector = new Scanner(System.in);
